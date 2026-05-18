@@ -8,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-19-tutorial';
+  title = 'Angular 19 Tutorial Project';
+  name: string = "Nikhil"
 }

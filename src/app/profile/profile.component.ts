@@ -8,4 +8,14 @@ import { Component } from "@angular/core";
     styleUrl: './profile.component.css'
 })
 
-export class ProfileComponent {}
+export class ProfileComponent {
+
+    functionName() {
+        alert("Hello Nikhil!")
+        this.otherFunction();
+    }
+
+    otherFunction() {
+        console.log("otherFunction called");
+    }
+}

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Chp10Component } from './chapters/chp-10/chp-10.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
     RouterOutlet, 
     LoginComponent, 
     SignupComponent, 
-    ProfileComponent
+    ProfileComponent,
+    Chp10Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

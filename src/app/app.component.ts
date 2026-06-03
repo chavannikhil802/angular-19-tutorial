@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { Chp10Component } from './chapters/chp-10/chp-10.component';
+import { Chp11Component } from './chapters/chp-11/chp-11.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { Chp10Component } from './chapters/chp-10/chp-10.component';
     LoginComponent, 
     SignupComponent, 
     ProfileComponent,
-    Chp10Component
+    Chp10Component,
+    Chp11Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,0 +1,26 @@
+<h1>If Else | Control Flow</h1>
+
+<button (click)="hideBlock()">Hide Green Block</button>
+&nbsp;
+<button (click)="showBlock()">Show Green Block</button>
+&nbsp;
+<button (click)="toggleBlock()">Toggle Green Block</button>
+
+@if(display) {
+    <div class="green-square"></div>
+}
+
+<hr>
+
+<h1>Toggle 2 blocks</h1>
+
+<button (click)="toggleBlocks()">
+    {{ toggleTwoBlocks ? 'Show Gray Block' : 'Show Golden Block' }}
+</button>
+
+@if(toggleTwoBlocks) {
+    <div class="gold-square"></div>
+}
+@else {
+    <div class="grey-square"></div>
+}

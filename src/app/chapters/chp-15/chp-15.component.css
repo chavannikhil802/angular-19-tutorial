@@ -1,0 +1,20 @@
+.green-square {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 20px
+}
+
+.gold-square {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 183, 0);
+    margin: 20px    
+}
+
+.grey-square {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin: 20px    
+}

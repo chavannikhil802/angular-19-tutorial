@@ -1,0 +1,23 @@
+.red-box {
+    background-color: red
+}
+.yellow-box {
+    background-color: yellow
+}
+.green-box {
+    background-color: green;
+}
+.blue-box {
+    background-color: blue;
+}
+.other-box {
+    background-color: black;
+}
+.red-box, 
+.yellow-box, 
+.green-box, 
+.blue-box, 
+.other-box {
+    width: 200px;
+    height: 200px;
+}

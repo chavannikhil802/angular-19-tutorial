@@ -1,0 +1,29 @@
+<h1>Else If | Control Flow</h1>
+
+<button (click)="changeColor('red')">Red</button>&nbsp;
+<button (click)="changeColor('yellow')">Yellow</button>&nbsp;
+<button (click)="changeColor('green')">Green</button>&nbsp;
+<button (click)="changeColor('blue')">Blue</button>&nbsp;
+<button (click)="changeColor('other')">Other</button>
+
+<br><br>
+
+<input type="text" (input)="handleInputColor($event)" placeholder="Enter color">
+
+<br><br>
+
+@if(color == "red") {
+    <div class="red-box"></div>
+}
+@else if (color == "yellow") {
+    <div class="yellow-box"></div>
+}
+@else if (color == "green") {
+    <div class="green-box"></div>
+}
+@else if (color == "blue") {
+    <div class="blue-box"></div>
+}
+@else {
+    <div class="other-box"></div>
+}

@@ -1,0 +1,32 @@
+<h1>Switch Case in Angular 19</h1>
+
+<button (click)="changeColor('red')">Red</button>&nbsp;
+<button (click)="changeColor('blue')">Blue</button>&nbsp;
+<button (click)="changeColor('green')">Green</button>&nbsp;
+<button (click)="changeColor('yellow')">Yellow</button>&nbsp;
+<button (click)="changeColor('grey')">Grey</button>&nbsp;
+
+<br><br>
+
+<input type="text" (input)="setColor($event)" placeholder="Enter color">
+
+@switch(color) {
+    @case('red') {
+        <h2 id="red">Color is Red</h2>
+    }
+    @case('blue') {
+        <h2 id="blue">Color is Blue</h2>
+    }
+    @case('green') {
+        <h2 id="green">Color is Green</h2>
+    }
+    @case('yellow') {
+        <h2 id="yellow">Color is Yellow</h2>
+    }
+    @case('grey') {
+        <h2 id="grey">Color is Grey</h2>
+    }
+    @default() {
+        <h2>This is default color</h2>
+    }
+}

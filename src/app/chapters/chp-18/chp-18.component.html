@@ -1,0 +1,15 @@
+<h1>For Loop in Angular 19</h1>
+
+<h2>Basic User Array</h2>
+@for(user of users; track user) {
+    <p>{{ user }}</p>
+}
+<hr>
+<h2>Student Array</h2>
+@for(student of students; track student; let id = $index) {
+    <p>Id: {{ id+1 }}</p>
+    <p>Name: {{ student.name }}</p>
+    <p>Age: {{ student.age }}</p>
+    <p>Email: {{ student.email }}</p>
+    <br>
+}

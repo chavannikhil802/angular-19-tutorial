@@ -1,0 +1,23 @@
+<h1>Signals in Angular 19</h1>
+<p>Displaying count: {{ count() }}</p>
+<!-- HERE, count.set(value) will set the value of the count -->
+<!-- <button (click)="count.set(4758)">Increase Count</button> -->
+
+<!-- CALLING THE increment() to increase the count -->
+<!-- <button (click)="increment()">Increase Count</button>&nbsp; -->
+
+<!-- CALLING THE decrement() to decrease the count -->
+<!-- <button (click)="decrement()">Decrease Count</button>&nbsp; -->
+
+<!-- CALLING THE reset() to reset the count -->
+<!-- <button (click)="reset()">Reset Count</button> -->
+
+
+<!-- INCREMENTING THE count IN THE TEMPLATE ITSELF -->
+<button (click)="count.set(count()+1)">Increase Count</button>&nbsp;
+
+<!-- DECREMENTING THE count IN THE TEMPLATE ITSELF -->
+<button (click)="count.set(count()-1)">Decrease Count</button>&nbsp;
+
+<!-- RESETTING THE count IN THE TEMPLATE ITSELF -->
+<button (click)="count.set(10)">Reset Count</button>

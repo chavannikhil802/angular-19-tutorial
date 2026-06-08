@@ -13,6 +13,8 @@ export class Chp22Component {
   count = signal(0);
 
   constructor() {
+    // effect() IS CALLED WHENEVER A SIGNAL IT READS CHANGES ITS VALUE
+    // HERE, effect() WILL BE CALLED WHENEVER THESE IS A CHANGE IN username() OR count()
     effect(() => {
       console.log("Username: ", this.username());
       console.log("Count: ", this.count());

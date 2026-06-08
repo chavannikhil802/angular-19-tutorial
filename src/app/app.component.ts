@@ -12,26 +12,28 @@ import { Component } from '@angular/core';
 // import { Chp16Component } from './chapters/chp-16/chp-16.component';
 // import { Chp18Component } from './chapters/chp-18/chp-18.component';
 // import { Chp19Component } from './chapters/chp-19/chp-19.component';
-import { Chp20Component } from './chapters/chp-20/chp-20.component';
+// import { Chp20Component } from './chapters/chp-20/chp-20.component';
+import { Chp21Component } from './chapters/chp-21/chp-21.component';
 
 @Component({
   selector: 'app-root',
   imports: [
-    // RouterOutlet, 
-    // LoginComponent, 
-    // SignupComponent, 
-    // ProfileComponent,
-    // Chp10Component,
-    // Chp11Component,
-    // Chp12Component, 
-    // Chp13Component, 
+    // RouterOutlet
+    // LoginComponent
+    // SignupComponent
+    // ProfileComponent
+    // Chp10Component
+    // Chp11Component
+    // Chp12Component
+    // Chp13Component
     // Chp14Component 
-    // Chp15Component, 
+    // Chp15Component
     // Chp16Component
     // Chp17Component
     // Chp18Component
     // Chp19Component
-    Chp20Component
+    // Chp20Component
+    Chp21Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

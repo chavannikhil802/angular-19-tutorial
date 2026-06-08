@@ -1,0 +1,12 @@
+<h1>Effect in Agular 19</h1>
+<h2>Username - {{ username() }}</h2>
+<button (click)="username.set('Nikhil Chavan')">Update User Name</button>
+<br>
+<br>
+<hr>
+<br>
+<button (click)="toggleValue()">Toggle Heading</button>
+<h2>Count: {{count()}}</h2>
+@if(displayHeading) {
+    <h1 id="heading">This is H1 Heading</h1>
+}

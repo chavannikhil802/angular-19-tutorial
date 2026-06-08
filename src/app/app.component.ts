@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
 // import { Chp18Component } from './chapters/chp-18/chp-18.component';
 // import { Chp19Component } from './chapters/chp-19/chp-19.component';
 // import { Chp20Component } from './chapters/chp-20/chp-20.component';
-import { Chp21Component } from './chapters/chp-21/chp-21.component';
+// import { Chp21Component } from './chapters/chp-21/chp-21.component';
+import { Chp22Component } from './chapters/chp-22/chp-22.component';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,8 @@ import { Chp21Component } from './chapters/chp-21/chp-21.component';
     // Chp18Component
     // Chp19Component
     // Chp20Component
-    Chp21Component
+    // Chp21Component
+    Chp22Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

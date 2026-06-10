@@ -1,0 +1,33 @@
+<h1>For Loop Contextual Variables</h1>
+@for(user of users; track user; let i = $index; let f = $first; let l = $last) {
+    @if(f) {
+        <h4
+            style = "background-color: orange">
+            {{ i+1 }} - {{ user }} | First value: {{ $first }} and Last value: {{ $last }}
+        </h4>
+    }
+    @else if(l) {
+        <h4
+            style = "background-color: green">
+            {{ i+1 }} - {{ user }} | First value: {{ $first }} and Last value: {{ $last }}
+        </h4>        
+    }
+    @else if($odd) {
+        <h4
+            style = "background-color: purple">
+            {{ i+1 }} - {{ user }} | First value: {{ $first }} and Last value: {{ $last }}
+        </h4>          
+    }
+    @else if($even) {
+        <h4
+            style = "background-color: crimson">
+            {{ i+1 }} - {{ user }} | First value: {{ $first }} and Last value: {{ $last }}
+        </h4>        
+    } 
+    @else {
+        <h4>{{ i+1 }} - {{ user }} | First value: {{ $first }} and Last value: {{ $last }}</h4>  
+    }  
+}
+@empty {
+    <h3>No records found</h3>
+}

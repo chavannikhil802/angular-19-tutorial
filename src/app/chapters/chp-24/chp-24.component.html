@@ -1,0 +1,11 @@
+<h1>Two way Binding</h1>
+<!-- USING ngModel -->
+<h3>Using ngModel</h3>
+<input type="text" placeholder="Enter name" [(ngModel)] = "name">
+<h4>You have entered: {{ name }}</h4>
+
+<hr>
+
+<h3>Using event and function</h3>
+<input type="text" placeholder="Enter name" (click)="updateName($event)" [(ngModel)] = "functionName">
+<h4>You have entered: {{ functionName }}</h4>

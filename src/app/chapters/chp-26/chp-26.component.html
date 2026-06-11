@@ -1,0 +1,9 @@
+<h1 
+[style.backgroundColor] = "color" 
+[style.fontSize.px] = "fontSize">
+Dynamic Styling
+</h1>
+
+<hr>
+<button (click)="updateHeadingSize()">Toggle Heading Size</button>
+<h1 [style.fontSize.px] = "zoom ? headingSizeBig : headingSizeSmall">Nikhil Narendra Chavan</h1>

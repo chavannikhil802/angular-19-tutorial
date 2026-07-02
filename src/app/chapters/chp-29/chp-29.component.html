@@ -1,0 +1,40 @@
+<h1>*ng If Directive</h1>
+
+<h2 *ngIf="show">Heading displayed</h2>
+
+<hr>
+
+<h2>If the user has logged in, then the Logout button will be displayed, else Login button will be displayed.</h2>
+
+<div *ngIf="loginStatus; else elseBlock">
+    <button>Logout</button>
+</div>
+<ng-template #elseBlock>
+    <button>Login</button>
+</ng-template>
+
+<hr>
+
+<!-- MULTIPLE IF CONDITIONS -->
+ <h2>Multiple If Condition</h2>
+
+<button (click)="changeBlock()">Change Block</button>
+
+<div *ngIf="block == 0">
+    <h4>This is Block 0</h4>
+</div>
+<div *ngIf="block == 1">
+    <h4>This is Block 1</h4>
+</div>
+<div *ngIf="block == 2">
+    <h4>This is Block 2</h4>
+</div>
+<div *ngIf="block == 3">
+    <h4>This is Block 3</h4>
+</div>
+<div *ngIf="block == 4">
+    <h4>This is Block 4</h4>
+</div>
+<div *ngIf="block == 5">
+    <h4>This is Block 5</h4>
+</div>

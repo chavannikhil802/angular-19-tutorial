@@ -20,7 +20,8 @@ import { Component } from '@angular/core';
 // import { Chp25Component } from './chapters/chp-25/chp-25.component';
 // import { Chp26Component } from './chapters/chp-26/chp-26.component';
 // import { Chp27Component } from './chapters/chp-27/chp-27.component';
-import { Chp28Component } from './chapters/chp-28/chp-28.component';
+// import { Chp28Component } from './chapters/chp-28/chp-28.component';
+import { Chp29Component } from './chapters/chp-29/chp-29.component';
 
 @Component({
   selector: 'app-root',
@@ -47,7 +48,8 @@ import { Chp28Component } from './chapters/chp-28/chp-28.component';
     // Chp25Component
     // Chp26Component
     // Chp27Component
-    Chp28Component
+    // Chp28Component
+    Chp29Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

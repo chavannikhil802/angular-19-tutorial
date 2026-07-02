@@ -1,0 +1,15 @@
+<h1>ngSwitch Directive</h1>
+<hr>
+<button (click)="changeColor('red')">Red</button>&nbsp;
+<button (click)="changeColor('grey')">Grey</button>&nbsp;
+<button (click)="changeColor('blue')">Blue</button>&nbsp;
+<button (click)="changeColor('yellow')">Yellow</button>&nbsp;
+<button (click)="changeColor('pink')">Pink</button>&nbsp;
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'red'" class="red">Red Color</h3>
+    <h3 *ngSwitchCase="'grey'" class="grey">Grey Color</h3>
+    <h3 *ngSwitchCase="'blue'" class="blue">Blue Color</h3>
+    <h3 *ngSwitchCase="'yellow'" class="yellow">Yellow Color</h3>
+    <h3 *ngSwitchCase="'pink'" class="pink">Pink Color</h3>
+    <h3 *ngSwitchDefault="">No color selected</h3>
+</div>

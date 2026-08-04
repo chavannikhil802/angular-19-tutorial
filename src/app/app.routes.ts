@@ -6,6 +6,7 @@ import { AboutUsPageComponent } from './chapters/chp-32/about-us-page/about-us-p
 import { ContactUsPageComponent } from './chapters/chp-32/contact-us-page/contact-us-page.component';
 import { LoginPageComponent } from './chapters/chp-32/login-page/login-page.component';
 import { HomePageComponent } from './chapters/chp-32/home-page/home-page.component';
+import { Chp33Component } from './chapters/chp-33/chp-33.component';
 
 export const routes: Routes = [
     { path: 'about', component: AboutComponent },
@@ -15,4 +16,5 @@ export const routes: Routes = [
     { path: 'about-us', component: AboutUsPageComponent },
     { path: 'contact-us', component: ContactUsPageComponent },
     { path: 'user-login', component: LoginPageComponent },
+    { path: '**', component: Chp33Component }
 ];

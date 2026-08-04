@@ -1,0 +1,19 @@
+<nav>
+    <h3>LOGO</h3>
+    <ul>
+        <li>
+            <a routerLinkActive="active" routerLink="chp-34/home" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li>
+            <a routerLinkActive="active" routerLink="chp-34/about">About Us</a>
+        </li>
+        <li>
+            <a routerLinkActive="active" routerLink="chp-34/contact">Contact Us</a>
+        </li>
+        <!-- PASSING VARIABLES TO OTHER COMPONENTS - METHOD 1 -->
+        <!-- QUERY PARAMETERS -->
+        <li>
+            <a routerLinkActive="active" [routerLink]="['chp-34/profile', {name: 'Nikhil'}]">Profile</a>
+        </li>
+    </ul>
+</nav>

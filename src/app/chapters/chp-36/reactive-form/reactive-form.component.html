@@ -1,0 +1,16 @@
+<form action="">
+    <input type="text" name="" id="" placeholder="Enter Username" [formControl]="username">
+    <br>
+    <br>
+    <input type="password" name="" id="" placeholder="Enter Password" [formControl]="password">
+    <br>
+    <br>
+    <button type="button" (click)="displayValues()">Login</button>
+    &nbsp;
+    <button type="button" (click)="updateValues()">Set Values</button>
+</form>
+
+<hr>
+
+<h3>Username - {{username.value}}</h3>
+<h3>Password - {{password.value}}</h3>

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-chp-35',
+  selector: 'app-chp-33',
   imports: [RouterModule],
-  templateUrl: './chp-35.component.html',
-  styleUrl: './chp-35.component.css'
+  templateUrl: './chp-33.component.html',
+  styleUrl: './chp-33.component.css'
 })
-export class Chp35Component {
+export class Chp33Component {
 
 }

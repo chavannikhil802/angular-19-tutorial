@@ -23,8 +23,9 @@ import { Component } from '@angular/core';
 // import { Chp28Component } from './chapters/chp-28/chp-28.component';
 // import { Chp29Component } from './chapters/chp-29/chp-29.component';
 // import { Chp30Component } from './chapters/chp-30/chp-30.component';
-import { Chp31Component } from './chapters/chp-31/chp-31.component';
-import { Chp32Component } from './chapters/chp-32/chp-32.component';
+// import { Chp31Component } from './chapters/chp-31/chp-31.component';
+// import { Chp32Component } from './chapters/chp-32/chp-32.component';
+// import { Chp34Component } from './chapters/chp-34/chp-34.component';
 import { Chp35Component } from './chapters/chp-35/chp-35.component';
 
 @Component({
@@ -57,6 +58,7 @@ import { Chp35Component } from './chapters/chp-35/chp-35.component';
     // Chp30Component
     // Chp31Component
     // Chp32Component
+    // Chp34Component
     Chp35Component
   ],
   templateUrl: './app.component.html',

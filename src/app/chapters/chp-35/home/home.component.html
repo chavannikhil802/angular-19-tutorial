@@ -1,0 +1,11 @@
+<h3>USERS</h3>
+<hr>
+<ul>
+    @for(user of users; track user.id) {
+        <li>
+            <a routerLink="user/{{user.id}}/{{user.name}}">
+                {{ user.name }}
+            </a>
+        </li>
+    }
+</ul>

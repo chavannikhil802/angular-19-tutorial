@@ -1,0 +1,20 @@
+<h1>Template Driven Forms</h1>
+<hr>
+<form #userForm="ngForm" (ngSubmit)="addDetails(userForm.value)">
+    <input type="text" name="user_name" id="" placeholder="Enter name" ngModel><br><br>
+    <input type="password" name="user_password" id="" placeholder="Enter passowrd" ngModel><br><br>
+    <select name="gender" id="" ngModel>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+    <input type="range" name="range" id="" min="0" max="100" ngModel><br><br>
+    <button>Add User</button>
+</form>
+<hr>
+<h3>Form Values</h3>
+<p><strong>Name: </strong>{{ userDetails?.user_name }}</p>
+<p><strong>Password: </strong>{{ userDetails?.user_password }}</p>
+<p><strong>Gender: </strong>{{ userDetails?.gender }}</p>
+<p><strong>Range: </strong>{{ userDetails?.range }}</p>
+<hr>

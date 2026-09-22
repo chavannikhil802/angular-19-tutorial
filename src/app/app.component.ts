@@ -29,6 +29,7 @@ import { Component } from '@angular/core';
 import { Chp35Component } from './chapters/chp-35/chp-35.component';
 import { Chp36Component } from './chapters/chp-36/chp-36.component';
 import { Chp38Component } from './chapters/chp-38/chp-38.component';
+import { Chp39Component } from './chapters/chp-39/chp-39.component';
 
 @Component({
   selector: 'app-root',
@@ -63,7 +64,8 @@ import { Chp38Component } from './chapters/chp-38/chp-38.component';
     // Chp34Component
     // Chp35Component
     // Chp36Component
-    Chp38Component
+    // Chp38Component
+    Chp39Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

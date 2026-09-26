@@ -32,6 +32,7 @@ import { Chp38Component } from './chapters/chp-38/chp-38.component';
 import { Chp39Component } from './chapters/chp-39/chp-39.component';
 import { Chp40Component } from './chapters/chp-40/chp-40.component';
 import { Chp41Component } from './chapters/chp-41/chp-41.component';
+import { Chp42Component } from './chapters/chp-42/chp-42.component';
 
 @Component({
   selector: 'app-root',
@@ -69,7 +70,8 @@ import { Chp41Component } from './chapters/chp-41/chp-41.component';
     // Chp38Component
     // Chp39Component
     // Chp40Component
-    Chp41Component
+    // Chp41Component
+    Chp42Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

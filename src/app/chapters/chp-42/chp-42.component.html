@@ -1,0 +1,11 @@
+<h1>Passing Data from Parent to Child Component</h1>
+<hr>
+<app-chp-42-user [user]="selectedUser.value" [city]="currentCity"></app-chp-42-user>
+
+<select #selectedUser (change)="selectUser(selectedUser.value)" name="" id="">
+    <option value="Nikhil">Nikhil</option>
+    <option value="Umesh">Umesh</option>
+    <option value="Sahil">Sahil</option>
+    <option value="Abhishek">Abhishek</option>
+    <option value="Vaibhav">Vaibhav</option>
+</select>

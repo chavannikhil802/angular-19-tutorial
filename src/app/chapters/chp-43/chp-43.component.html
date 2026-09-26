@@ -1,0 +1,6 @@
+<h1>Reuse Components with Pass Data to Child Components Easily</h1>
+<hr>
+@for(user of users; track user) {
+    <!-- <p>{{ user }}</p> -->
+    <app-chp-43-user [user]="user"></app-chp-43-user>
+}

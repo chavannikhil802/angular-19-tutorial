@@ -1,0 +1,7 @@
+<h1>Data from Child to Parent Component</h1>
+<hr>
+<app-chp-44-user (getUsers)="handleUsers($event)"></app-chp-44-user>
+
+@for(user of users; track user) {
+    <h4>{{ user }}</h4>
+}

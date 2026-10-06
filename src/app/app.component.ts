@@ -38,6 +38,7 @@ import { Chp44Component } from './chapters/chp-44/chp-44.component';
 import { Chp45Component } from './chapters/chp-45/chp-45.component';
 import { Chp46Component } from './chapters/chp-46/chp-46.component';
 import { Chp47Component } from './chapters/chp-47/chp-47.component';
+import { Chp48Component } from './chapters/chp-48/chp-48.component';
 
 @Component({
   selector: 'app-root',
@@ -81,7 +82,8 @@ import { Chp47Component } from './chapters/chp-47/chp-47.component';
     // Chp44Component
     // Chp45Component
     // Chp46Component
-    Chp47Component
+    // Chp47Component
+    Chp48Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -91,19 +93,19 @@ export class AppComponent {
   @ViewChild('chp47') Chp47Component: any
 
   title = 'Angular 19 Tutorial Project';
-  name: string = "Nikhil"
-  counter: number = 0;
+  // name: string = "Nikhil"
+  // counter: number = 0;
 
-  constructor() {
-    afterRender(() => {
-      console.log("After Render", this.Chp47Component.counter);
-    });
-    afterNextRender(() => {
-      console.log("After Next Render", this.Chp47Component.counter);
-    })
-  }
+  // constructor() {
+  //   afterRender(() => {
+  //     console.log("After Render", this.Chp47Component.counter);
+  //   });
+  //   afterNextRender(() => {
+  //     console.log("After Next Render", this.Chp47Component.counter);
+  //   })
+  // }
 
-  updateCounter() {
-    this.counter++;
-  }
+  // updateCounter() {
+  //   this.counter++;
+  // }
 }

@@ -1,0 +1,9 @@
+<h1>Angular Services</h1>
+<hr>
+<button (click)="getUserData()">Load Product Data</button>
+@for(user of userData; track user) {
+    <p>Name - {{ user.name }}</p>
+    <p>Age - {{ user.age }}</p>
+    <p>Email - {{ user.email }}</p>
+    <br>
+}

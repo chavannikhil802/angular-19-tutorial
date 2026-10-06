@@ -1,0 +1,16 @@
+<h1>Mastering Angular Pipes</h1>
+<hr>
+<h3>{{ name | uppercase}}</h3>
+<h3>{{ name | titlecase}}</h3>
+<h3>{{ name | lowercase}}</h3>
+<hr>
+<h3>Date - {{ date | date }}</h3>
+<h3>Date - {{ date | date:'fullDate' }}</h3>
+<h3>Date - {{ date | date:'hh:mm:ss' }}</h3>
+<hr>
+<h3>Currency - {{ amount | currency:'INR' }}</h3>
+<h3>Currency - {{ amount | currency:'EUR' }}</h3>
+<h3>Currency - {{ amount | currency:'GBP' }}</h3>
+<h3>Currency - {{ amount | currency }}</h3>
+<hr>
+<h3>Date - {{ date | date:'fullDate' | uppercase }}</h3>

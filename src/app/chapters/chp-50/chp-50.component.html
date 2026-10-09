@@ -1,0 +1,11 @@
+<h1>REST API using Services</h1>
+<hr>
+@for(product of productList; track product.id) {
+    <ul>
+        <li><b>Name: </b>{{ product.title }}</li>
+        <li><b>Price: </b>{{ product.price }}</li>
+        <li><b>Category: </b>{{ product.category }}</li>
+        <li><b>Rating: </b>{{ product.rating }}</li>
+        <img src="{{ product.thumbnail }}" alt="{{ product.title }}">
+    </ul>
+}

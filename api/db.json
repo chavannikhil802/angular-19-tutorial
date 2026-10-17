@@ -1,41 +1,74 @@
 {
-  "$schema": "./node_modules/json-server/schema.json",
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "users": [
     {
       "name": "Nikhil",
       "age": 34,
-      "email": "nikhil@test.com"
+      "email": "nikhil@test.com",
+      "id": "jSwQh3Gl5mo"
     },
     {
       "name": "Narendra",
       "age": 67,
-      "email": "narendra@test.com"
+      "email": "narendra@test.com",
+      "id": "mR0MrLQUDg8"
     },
     {
       "name": "Neha",
       "age": 31,
-      "email": "neha@test.com"
+      "email": "neha@test.com",
+      "id": "dEtvWTJoYmE"
     },
     {
       "name": "Savita",
       "age": 57,
-      "email": "savita@test.com"
+      "email": "savita@test.com",
+      "id": "eo-FkVSgDEY"
     },
     {
       "name": "Umesh",
       "age": 44,
-      "email": "umesh@test.com"
+      "email": "umesh@test.com",
+      "id": "WMNFeyiYC9g"
+    },
+    {
+      "name": "Shrushti",
+      "email": "shrushti@test.com",
+      "age": "33",
+      "id": "kjEYGr8uqcI"
+    },
+    {
+      "name": "Namrata",
+      "email": "namu@test.com",
+      "age": "33",
+      "id": "ACUU-yWzZaE"
     }
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "$schema": "./node_modules/json-server/schema.json"
 }

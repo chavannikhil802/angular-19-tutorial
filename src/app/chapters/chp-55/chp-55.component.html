@@ -1,0 +1,21 @@
+<h1>API Call Service</h1>
+<hr>
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+    <input type="text" name="name" placeholder="Enter name" id="" ngModel>
+    <br><br>
+    <input type="text" name="email" placeholder="Enter email" id="" ngModel>
+    <br><br>
+    <input type="text" name="age" placeholder="Enter age" id="" ngModel>
+    <br><br>
+    <button>Add User</button>
+</form>
+<hr>
+@for(user of users; track user) {
+    <ul>
+        <li><b>Name:</b> {{user.name}}</li>
+        <li><b>Age:</b> {{user.age}}</li>
+        <li><b>Email Address:</b> {{user.email}}</li>
+        <button (click)="deleteUser(user.id)">DELETE</button>&nbsp;<button>UPDATE</button>
+    </ul>
+} 
+<hr>

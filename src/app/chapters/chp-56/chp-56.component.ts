@@ -38,8 +38,13 @@ export class Chp56Component {
       });
     }
     else {
-      console.log("Update User here");
       console.log(user);
+      const userData = {...user, id:this.selectedUser.id};
+      this.usersService.updateUser(userData).subscribe((data: User) => {
+        if(data) {
+          this.getUsers();
+        }
+      });
     }
   }
 

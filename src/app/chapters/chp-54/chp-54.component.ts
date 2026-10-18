@@ -36,4 +36,14 @@ export class Chp54Component {
       }
     });
   }
+
+  deleteUser(id: string) {
+    console.log(id);
+    this.usersService.deleteUser(id).subscribe((data:User)=>{
+      console.log(data);
+      if(data) {
+        this.getUsers()
+      }      
+    });
+  }
 }

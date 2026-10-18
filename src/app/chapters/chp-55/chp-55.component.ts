@@ -14,6 +14,7 @@ import { UsersService } from './services/users.service';
 export class Chp55Component {
 
   users: User[] = [];
+  selectedUser: User | undefined;
 
   constructor(private usersService: UsersService) {}
 
@@ -29,21 +30,32 @@ export class Chp55Component {
   }
 
   addUser(user: User) {
-    console.log(user);
-    this.usersService.saveUsers(user).subscribe((data: User) => {
-      if(data) {
-        this.getUsers()
-      }
-    });
+    if(!this.selectedUser) {
+      this.usersService.saveUsers(user).subscribe((data: User) => {
+        if(data) {
+          this.getUsers()
+        }
+      });
+    }
+    else {
+      console.log("Update User here");
+      console.log(user);
+    }
   }
 
   deleteUser(id: string) {
-    console.log(id);
     this.usersService.deleteUser(id).subscribe((data:User)=>{
       console.log(data);
       if(data) {
         this.getUsers()
       }      
+    });
+  }
+
+  selectUser(id: string) {
+    this.usersService.getSelectedUser(id).subscribe((data:User)=>{
+      console.log(data);
+      this.selectedUser = data;
     });
   }
 }

@@ -16,6 +16,8 @@ import { UserComponent } from './chapters/chp-35/user/user.component';
 import { Chp35Component } from './chapters/chp-35/chp-35.component';
 import { HomeComponent } from './chapters/chp-35/home/home.component';
 import { Chp36Component } from './chapters/chp-36/chp-36.component';
+import { AdminComponent } from './chapters/chp-57/admin/admin.component';
+import { Chp57Component } from './chapters/chp-57/chp-57.component';
 
 export const routes: Routes = [
     { path: 'about', component: AboutComponent },
@@ -31,6 +33,8 @@ export const routes: Routes = [
     { path: 'chp-34/profile', component: Chp34ProfileComponent },   
     { path: 'chp-35', component: HomeComponent },
     { path: 'chp-35/user/:id/:name', component: UserComponent},     
-    { path: 'chp-36', component: Chp36Component},     
+    { path: 'chp-36', component: Chp36Component}, 
+    { path: 'chp-57', loadComponent: ()=>import('./chapters/chp-57/chp-57.component').then((c)=>c.Chp57Component)}, 
+    { path: 'chp-57/admin', loadComponent: ()=>import('./chapters/chp-57/admin/admin.component').then((c)=>c.AdminComponent)}, 
     { path: '**', component: Chp33Component }
 ];

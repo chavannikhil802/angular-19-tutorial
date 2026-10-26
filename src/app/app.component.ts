@@ -46,6 +46,7 @@ import { Chp53Component } from './chapters/chp-53/chp-53.component';
 import { Chp54Component } from './chapters/chp-54/chp-54.component';
 import { Chp55Component } from './chapters/chp-55/chp-55.component';
 import { Chp56Component } from './chapters/chp-56/chp-56.component';
+import { Chp57Component } from './chapters/chp-57/chp-57.component';
 
 @Component({
   selector: 'app-root',
@@ -97,7 +98,8 @@ import { Chp56Component } from './chapters/chp-56/chp-56.component';
     // Chp53Component
     // Chp54Component
     // Chp55Component
-    Chp56Component
+    // Chp56Component
+    Chp57Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
